@@ -3,14 +3,16 @@
 /**
  * main - Entry point
  *
+ * Calculator uses double for consistent decimal behavior.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int choice;
-	int a;
-	int b;
-	int result;
+	double a;
+	double b;
+	double result;
 
 	while (1)
 	{
@@ -38,11 +40,11 @@ int main(void)
 		}
 
 		printf("A: ");
-		if (scanf("%d", &a) != 1)
+		if (scanf("%lf", &a) != 1)
 			return (0);
 
 		printf("B: ");
-		if (scanf("%d", &b) != 1)
+		if (scanf("%lf", &b) != 1)
 			return (0);
 
 		if (choice == 1)
@@ -51,10 +53,17 @@ int main(void)
 			result = a - b;
 		else if (choice == 3)
 			result = a * b;
-		else
-			continue;
+		else if (choice == 4)
+		{
+			if (b == 0)
+			{
+				printf("Error: division by zero\n");
+				continue;
+			}
+			result = a / b;
+		}
 
-		printf("Result: %d\n", result);
+		printf("Result: %g\n", result);
 	}
 
 	return (0);
