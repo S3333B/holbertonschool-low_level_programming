@@ -49,6 +49,8 @@ int main(void)
 			result = a + b;
 		else if (choice == 2)
 			result = a - b;
+		else if (choice == 3)
+			result = a * b;
 		else
 			continue;
 
