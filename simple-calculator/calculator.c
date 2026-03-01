@@ -37,19 +37,22 @@ int main(void)
 			continue;
 		}
 
+		printf("A: ");
+		if (scanf("%d", &a) != 1)
+			return (0);
+
+		printf("B: ");
+		if (scanf("%d", &b) != 1)
+			return (0);
+
 		if (choice == 1)
-		{
-			printf("A: ");
-			if (scanf("%d", &a) != 1)
-				return (0);
-
-			printf("B: ");
-			if (scanf("%d", &b) != 1)
-				return (0);
-
 			result = a + b;
-			printf("Result: %d\n", result);
-		}
+		else if (choice == 2)
+			result = a - b;
+		else
+			continue;
+
+		printf("Result: %d\n", result);
 	}
 
 	return (0);
