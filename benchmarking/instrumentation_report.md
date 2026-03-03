@@ -1,0 +1,6 @@
+# REPORT
+
+BUILD_DATA seconds: 0.000224
+PROCESS seconds: 0.000226
+REDUCE seconds: 0.000124
+TOTAL seconds: 0.000577
