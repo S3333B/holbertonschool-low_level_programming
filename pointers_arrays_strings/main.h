@@ -16,6 +16,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *str);
 void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 void reverse_array(int *a, int n);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
