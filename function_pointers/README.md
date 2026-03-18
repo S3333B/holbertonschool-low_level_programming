@@ -1,2 +1,0 @@
-# README
-C - Function pointers
